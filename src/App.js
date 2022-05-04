@@ -1,5 +1,6 @@
+import React from "react";
 import './App.css';
-
+import Componente from "./components/Componente";
 function App() {
   let nombre="armuto";
   let auth=true;
@@ -20,6 +21,9 @@ function App() {
         <label htmlFor='nombre'>Nombre</label>
         <input type="text" id="nombre"/>
       </header>
+      <section>
+          <Componente msg="Hola soy un componente funcional expresado desde una props"/>
+        </section>
     </div>
   );
 }
