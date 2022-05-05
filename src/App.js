@@ -26,7 +26,15 @@ function App() {
         <section>
           <Componente msg="Hola soy un componente funcional expresado desde una props"/>
           <hr/>
-          <Propiedades cadena="Esto es una cadena de texto" numero={19} booleano={false}/>
+          <Propiedades 
+          cadena="Esto es una cadena de texto" 
+          numero={19} 
+          booleano={false} 
+          arreglo={[1,2,3]} 
+          objeto={{nombre:"Luis", apellido:"Armuto"}} 
+          funcion={(num)=>num*num}
+          elementoReact={<i>Esto es un elemento de react</i>}
+          componenteReact={<Componente msg="Soy un componente pasado como prop"></Componente>}/>
         </section>
       </header>
           
